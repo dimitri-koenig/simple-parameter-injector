@@ -1,0 +1,39 @@
+{
+  "name": "simple-parameter-injector",
+  "description": "Injects parameters into strings (of objects and arrays)",
+  "version": "1.0.0",
+  "author": "Dimitri König <dimitri@dimitrikoenig.net>",
+  "contributors": [
+    {
+      "name": "Dimitri König",
+      "email": "dimitri@dimitrikoenig.net"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dimitri-koenig/simple-parameter-injector.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dimitri-koenig/simple-parameter-injector/issues"
+  },
+  "dependencies": {
+    "lodash": "^3.10.1"
+  },
+  "devDependencies": {
+    "babel": "^5.8.23",
+    "chai": "^3.2.0",
+    "eslint": "^1.3.0",
+    "istanbul": "^0.3.18",
+    "mocha": "^2.2.5",
+    "sinon": "^1.16.1"
+  },
+  "keywords": [
+    "xml",
+    "converter"
+  ],
+  "main": "./node/simple-parameter-injector",
+  "scripts": {
+    "test": "make test"
+  },
+  "license": "MIT"
+}
