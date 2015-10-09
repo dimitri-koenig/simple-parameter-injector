@@ -1,4 +1,9 @@
-# Simple Parameter Injector
+# Simple Parameter Injector [![Build Status](https://travis-ci.org/dimitri-koenig/simple-parameter-injector.svg?branch=master)](https://travis-ci.org/dimitri-koenig/simple-parameter-injector)
+
+[![npm version](https://badge.fury.io/js/simple-parameter-injector.svg)](http://badge.fury.io/js/simple-parameter-injector)
+[![Test Coverage](https://codeclimate.com/github/dimitri-koenig/simple-parameter-injector/badges/coverage.svg)](https://codeclimate.com/github/dimitri-koenig/simple-parameter-injector/coverage)
+[![Code Climate](https://codeclimate.com/github/dimitri-koenig/simple-parameter-injector/badges/gpa.svg)](https://codeclimate.com/github/dimitri-koenig/simple-parameter-injector)
+[![Dependency Status](https://david-dm.org/dimitri-koenig/simple-parameter-injector.svg)](https://david-dm.org/dimitri-koenig/simple-parameter-injector)
 
 Simple Parameter Injector is a Javascript module which injects parameters out of array's and object's into strings.
 
