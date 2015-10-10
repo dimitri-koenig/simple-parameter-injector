@@ -20,7 +20,7 @@ $ npm install simple-parameter-injector --save
 
 ## Versioning
 
-`Simple XML Converter` follows [Semantic Versioning 2.0.0](http://semver.org)
+`Simple Parameter Injector` follows [Semantic Versioning 2.0.0](http://semver.org)
 
 
 ## Contributing
