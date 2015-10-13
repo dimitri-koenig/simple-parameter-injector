@@ -135,6 +135,14 @@ describe('ParamsInjector', () => {
         }
     });
 
+    it('ignores empty param argument', () => {
+        var given = 'where-x-expression = 123 and where-y-expression = 234';
+        var expected = 'where-x-expression = 123 and where-y-expression = 234';
+
+        expect(ParamsInjector.inject(given, undefined)).to.equal(expected);
+        expect(ParamsInjector.inject(given, null)).to.equal(expected);
+    });
+
     it('Returns target as it is if it\'s not a string or object', () => {
         expect(ParamsInjector.inject(123, 123)).to.equal(123);
         expect(ParamsInjector.inject(null, 123)).to.equal(null);
