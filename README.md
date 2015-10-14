@@ -15,7 +15,50 @@ $ npm install simple-parameter-injector --save
 ```
 
 
-## Example
+## Examples
+
+```javascript
+var paramsInjector = require('simple-parameter-injector');
+
+// injecting a string into another string
+var str = paramsInjector.inject('replace this ? with a real string', 'placeholder');
+// output: replace this placeholder with a real string
+
+
+// injecting a number into a string
+var str = paramsInjector.inject('mambo nr ?', 5);
+// output: mambo nr 5
+
+
+// injecting an array of placeholders into a string
+var str = paramsInjector.inject('replace this ? with another ?', ['placeholder', 'real string']);
+// output: replace this placeholder with another real string
+
+
+// injecting an object of named placeholders into a string
+var placeholders = {
+    firstString: 'placeholder',
+    secondString: 'real string'
+};
+var str = paramsInjector.inject('replace this :firstString with another :secondString', placeholders);
+// output: replace this placeholder with another real string
+
+
+// injecting an object of named placeholders into another object with placeholders
+var placeholders = {
+    firstString: 'placeholder',
+    secondString: 'real string'
+};
+var obj = {
+    firstKey: 'i need a :firstString',
+    secondKey: 'with a :secondString'
+};
+var resultObject = paramsInjector.inject(obj, placeholders);
+// resultObject: {
+//     firstKey: 'i need a placeholder',
+//     secondKey: 'with a real string'
+// }
+```
 
 
 ## Versioning
