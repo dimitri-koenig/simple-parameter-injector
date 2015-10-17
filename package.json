@@ -28,8 +28,12 @@
     "sinon": "^1.16.1"
   },
   "keywords": [
-    "xml",
-    "converter"
+    "objects",
+    "arrays",
+    "parameter",
+    "injection",
+    "replacement",
+    "replace"
   ],
   "main": "./node/simple-parameter-injector",
   "scripts": {
