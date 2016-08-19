@@ -143,8 +143,42 @@ describe('ParamsInjector', () => {
         expect(ParamsInjector.inject(given, null)).to.equal(expected);
     });
 
-    it('Returns target as it is if it\'s not a string or object', () => {
+    it('returns target as it is if it\'s not a string or object', () => {
         expect(ParamsInjector.inject(123, 123)).to.equal(123);
         expect(ParamsInjector.inject(null, 123)).to.equal(null);
+    });
+
+    it('does not modify params parameter if parameter is an object', () => {
+        var given = [
+            'where-x-expression = :x',
+            {
+                subitem: 'where-y-expression = :y'
+            }
+        ];
+        var params = {
+            x: 123,
+            y: '234'
+        };
+
+        ParamsInjector.inject(given, params);
+
+        expect(params.x).to.equal(123);
+        expect(params.y).to.equal('234');
+    });
+
+    it('does not modify params parameter if parameter is an array', () => {
+        var given = [
+            'where-x-expression = ?',
+            {
+                subitem: 'where-y-expression = ?'
+            }
+        ];
+        var params = [123, '234'];
+
+        ParamsInjector.inject(given, params);
+
+        expect(params.length).to.equal(2);
+        expect(params[0]).to.equal(123);
+        expect(params[1]).to.equal('234');
     });
 });
