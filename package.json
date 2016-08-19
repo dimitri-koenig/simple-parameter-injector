@@ -17,7 +17,7 @@
     "url": "https://github.com/dimitri-koenig/simple-parameter-injector/issues"
   },
   "dependencies": {
-    "lodash": "^3.10.1"
+    "lodash": "^4.15.0"
   },
   "devDependencies": {
     "babel-cli": "^6.0.14",
