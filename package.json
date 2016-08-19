@@ -1,7 +1,7 @@
 {
   "name": "simple-parameter-injector",
   "description": "Injects parameters into strings (of objects and arrays)",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Dimitri König <dimitri@dimitrikoenig.net>",
   "contributors": [
     {
