@@ -1,7 +1,4 @@
-# Simple Parameter Injector [![Build Status](https://travis-ci.org/dimitri-koenig/simple-parameter-injector.svg?branch=master)](https://travis-ci.org/dimitri-koenig/simple-parameter-injector)
-
-[![npm version](https://badge.fury.io/js/simple-parameter-injector.svg)](http://badge.fury.io/js/simple-parameter-injector)
-[![Dependency Status](https://david-dm.org/dimitri-koenig/simple-parameter-injector.svg)](https://david-dm.org/dimitri-koenig/simple-parameter-injector)
+# Simple Parameter Injector
 
 Simple Parameter Injector is a Javascript module which injects parameters out of array's and object's into strings.
 
@@ -16,42 +13,42 @@ $ npm install simple-parameter-injector --save
 ## Examples
 
 ```javascript
-var paramsInjector = require('simple-parameter-injector');
+import ParamsInjector from 'simple-parameter-injector';
 
 // injecting a string into another string
-var str = paramsInjector.inject('replace this ? with a real string', 'placeholder');
+const str = ParamsInjector.inject('replace this ? with a real string', 'placeholder');
 // output: replace this placeholder with a real string
 
 
 // injecting a number into a string
-var str = paramsInjector.inject('mambo nr ?', 5);
+const str = ParamsInjector.inject('mambo nr ?', 5);
 // output: mambo nr 5
 
 
 // injecting an array of placeholders into a string
-var str = paramsInjector.inject('replace this ? with another ?', ['placeholder', 'real string']);
+const str = ParamsInjector.inject('replace this ? with another ?', ['placeholder', 'real string']);
 // output: replace this placeholder with another real string
 
 
 // injecting an object of named placeholders into a string
-var placeholders = {
+const placeholders = {
     firstString: 'placeholder',
     secondString: 'real string'
 };
-var str = paramsInjector.inject('replace this :firstString with another :secondString', placeholders);
+const str = ParamsInjector.inject('replace this :firstString with another :secondString', placeholders);
 // output: replace this placeholder with another real string
 
 
 // injecting an object of named placeholders into another object with placeholders
-var placeholders = {
+const placeholders = {
     firstString: 'placeholder',
     secondString: 'real string'
 };
-var obj = {
+const obj = {
     firstKey: 'i need a :firstString',
     secondKey: 'with a :secondString'
 };
-var resultObject = paramsInjector.inject(obj, placeholders);
+const resultObject = ParamsInjector.inject(obj, placeholders);
 // resultObject: {
 //     firstKey: 'i need a placeholder',
 //     secondKey: 'with a real string'
