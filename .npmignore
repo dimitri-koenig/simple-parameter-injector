@@ -12,7 +12,6 @@ npm-debug.log
 .travis.yml
 Makefile
 coverage
-lib
 node_modules
 test
 Makefile

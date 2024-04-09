@@ -1,7 +1,8 @@
 {
   "name": "simple-parameter-injector",
   "description": "Injects parameters into strings (of objects and arrays)",
-  "version": "1.0.1",
+  "version": "2.0.0",
+  "type": "module",
   "author": "Dimitri König <dimitri@dimitrikoenig.net>",
   "contributors": [
     {
@@ -17,16 +18,12 @@
     "url": "https://github.com/dimitri-koenig/simple-parameter-injector/issues"
   },
   "dependencies": {
-    "lodash": "^4.15.0"
+    "lodash": "4.17.21"
   },
   "devDependencies": {
-    "babel-cli": "^6.0.14",
-    "babel-core": "^6.0.14",
-    "babel-plugin-transform-es2015-modules-commonjs": "^6.0.14",
-    "babel-preset-es2015": "^6.0.14",
-    "chai": "^3.2.0",
-    "mocha": "^2.2.5",
-    "sinon": "^1.16.1"
+    "chai": "5.1.0",
+    "mocha": "10.4.0",
+    "sinon": "17.0.1"
   },
   "keywords": [
     "objects",
@@ -36,7 +33,8 @@
     "replacement",
     "replace"
   ],
-  "main": "./node/simple-parameter-injector",
+  "main": "./lib/simple-parameter-injector.js",
+  "exports": "./lib/simple-parameter-injector.js",
   "scripts": {
     "test": "make test"
   },

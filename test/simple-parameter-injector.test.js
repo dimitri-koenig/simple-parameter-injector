@@ -1,4 +1,4 @@
-import ParamsInjector from '../lib/simple-parameter-injector';
+import ParamsInjector from '../lib/simple-parameter-injector.js';
 import {expect} from 'chai';
 import sinon from 'sinon';
 
