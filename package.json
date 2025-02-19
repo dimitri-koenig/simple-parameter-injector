@@ -22,7 +22,7 @@
   },
   "devDependencies": {
     "chai": "5.1.0",
-    "mocha": "10.4.0",
+    "mocha": "10.8.2",
     "sinon": "17.0.1"
   },
   "keywords": [
