@@ -1,6 +1,9 @@
 # Simple Parameter Injector
 
-Simple Parameter Injector is a Javascript module which injects parameters out of array's and object's into strings.
+> **⚠️ This repository is archived and no longer maintained.**
+> All necessary code has been integrated into [simple-vertec-api](https://github.com/dimitri-koenig/simple-vertec-api). Please use that project instead.
+
+Simple Parameter Injector is a Javascript module which injects parameters out of arrays and objects into strings.
 
 ## Installation
 
